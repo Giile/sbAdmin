@@ -11,7 +11,7 @@ if(isset($_GET['action'])) {
 
 // AÇÕES
 switch ($action) {
-    case "listar":
+    case 'listar':
         $controller->selectAll();
         break;
     case 'adicionar':
@@ -19,5 +19,10 @@ switch ($action) {
         break;
     case 'insert':
         $controller->insert($_POST);
+        break;
+    case 'delete':
+        if (isset($_GET['id'])) {
+            $controller->delete($_GET['id']);
+        }
         break;
 }
