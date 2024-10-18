@@ -1,23 +1,22 @@
-<?php echo "Olá<br>";    
+<?php 
+    echo "Nome<br>";
+    echo $_POST["nome"];
     echo "<br><br>";
-    echo "Nome:<br>";
-    echo $_POST["Nome"];
+    echo "CPF<br>";
+    echo $_POST["cpf"];
     echo "<br><br>";
-    echo "CPF:<br>";
-    echo $_POST["CPF"];
+    echo "Endereço<br>";
+    echo $_POST["endereco"];
     echo "<br><br>";
-    echo "Endereço:<br>";
-    echo $_POST["Endereco"];
+    echo "Telefone<br>";
+    echo $_POST["telefone"];
     echo "<br><br>";
-    echo "Telefone:<br>";
-    echo $_POST["Telefone"];
+    echo "Idade<br>";
+    echo $_POST["idade"];
     echo "<br><br>";
-    echo "Idade:<br>";
-    echo $_POST["Idade"];
+    echo "E-mail<br>";
+    echo $_POST["email"];
     echo "<br><br>";
-    echo "Email:<br>";
-    echo $_POST["Email"];
-    echo "<br><br>";
-    echo "Observação:<br>";
-    echo $_POST["Observacao"];
+    echo "Observação<br>";
+    echo $_POST["observacao"];
 ?>

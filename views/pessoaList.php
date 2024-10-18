@@ -1,8 +1,8 @@
-<?php include "./views/includes/header.php"; ?>
+<?php include './views/includes/header.php'; ?>
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-<h1 class="h3 mb-2 text-gray-800">Pessoas</h1>
+    <h1 class="h3 mb-2 text-gray-800">Pessoas</h1>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <a href="./pessoa.php?action=adicionar" class="btn btn-primary btn-icon-split">
@@ -30,38 +30,36 @@
                         </tr>
                     </thead>
                     <tbody>
-                       <?php foreach ($result as $linha): ?>
-                           <tr>
-                               <td><?= $linha["Id"] ?></td>
-                               <td><?= $linha["Nome"] ?></td>
-                               <td><?= $linha["CPF"] ?></td>
-                               <td><?= $linha["Idade"] ?></td>
-                               <td><?= $linha["Telefone"] ?></td>
-                               <td><?= $linha["Email"] ?></td>
-                               <td><?= $linha["Endereco"] ?></td>
-                               <td><?= $linha["Observacao"] ?></td>
-                               <td class="text-center">
-    <a href="./pessoa.php?action=editar&id=<?= $linha['Id'] ?>" class="btn btn-warning btn-circle">
-        <i class="fas fa-list"></i>
-    </a>
-</td>
-<td class="text-center">
-    <a href="./pessoa.php?action=delete&id=<?= $linha['Id'] ?>" class="btn btn-danger btn-circle">
-        <i class="fas fa-trash"></i>
-    </a>
-</td>
-                           </tr>
-                       <?php endforeach; ?>
+                        <?php foreach ($result as $linha): ?>
+                            <tr>
+                                <td><?= $linha['Id'] ?></td>
+                                <td><?= $linha['Nome'] ?></td>
+                                <td><?= $linha['CPF'] ?></td>
+                                <td><?= $linha['Idade'] ?></td>
+                                <td><?= $linha['Telefone'] ?></td>
+                                <td><?= $linha['Email'] ?></td>
+                                <td><?= $linha['Endereco'] ?></td>
+                                <td><?= $linha['Observacao'] ?></td>
+                                <td class="text-center">
+                                    <a href="./pessoa.php?action=editar&id=<?= $linha['Id'] ?>" class="btn btn-warning btn-circle">
+                                        <i class="fas fa-list"></i>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="./pessoa.php?action=delete&id=<?= $linha['Id'] ?>" class="btn btn-danger btn-circle">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
-
             </div>
         </div>
         <div class="card-footer py-3">
-		     <h6 class="m-0 font-weight-bold text-primary">Total de Contatos: <?= count($result) ?></h6>
+            <h6 class="m-0 font-weight-bold text-primary">Total de Contatos: <?= count($result) ?></h6>
         </div>
     </div>
-
 </div>
 
-<?php include "./views/includes/footer.php"; ?>
+<?php include './views/includes/footer.php'; ?>
