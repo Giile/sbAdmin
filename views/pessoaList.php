@@ -32,21 +32,21 @@
                     <tbody>
                         <?php foreach ($result as $linha): ?>
                             <tr>
-                                <td><?= $linha['Id'] ?></td>
-                                <td><?= $linha['Nome'] ?></td>
-                                <td><?= $linha['CPF'] ?></td>
-                                <td><?= $linha['Idade'] ?></td>
-                                <td><?= $linha['Telefone'] ?></td>
-                                <td><?= $linha['Email'] ?></td>
-                                <td><?= $linha['Endereco'] ?></td>
-                                <td><?= $linha['Observacao'] ?></td>
+                                <td><?= $linha['id'] ?></td>
+                                <td><?= $linha['nome'] ?></td>
+                                <td><?= $linha['cpf'] ?></td>
+                                <td><?= $linha['idade'] ?></td>
+                                <td><?= $linha['telefone'] ?></td>
+                                <td><?= $linha['email'] ?></td>
+                                <td><?= $linha['endereco'] ?></td>
+                                <td><?= $linha['observacao'] ?></td>
                                 <td class="text-center">
-                                    <a href="./pessoa.php?action=editar&id=<?= $linha['Id'] ?>" class="btn btn-warning btn-circle">
+                                    <a href="./pessoa.php?action=editar&id=<?= $linha['id'] ?>" class="btn btn-warning btn-circle">
                                         <i class="fas fa-list"></i>
                                     </a>
                                 </td>
                                 <td class="text-center">
-                                    <a href="./pessoa.php?action=delete&id=<?= $linha['Id'] ?>" class="btn btn-danger btn-circle">
+                                    <a href="./pessoa.php?action=delete&id=<?= $linha['id'] ?>" class="btn btn-danger btn-circle">
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>

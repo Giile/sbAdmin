@@ -1,16 +1,16 @@
-<?php 
+<?php
 if (!empty($result['id'])) {
     // EDITAR
     $titulo = 'Editar Pessoa';
     $action = 'update';
-    $id = $result['Id'];
-    $nome = $result['Nome'];
-    $cpf = $result['CPF'];
-    $idade = $result['Idade'];
-    $telefone = $result['Telefone'];
-    $email = $result['Email'];
-    $endereco = $result['Endereco'];
-    $observacao = $result['Observacao'];
+    $id = $result['id'];
+    $nome = $result['nome'];
+    $cpf = $result['cpf'];
+    $idade = $result['idade'];
+    $telefone = $result['telefone'];
+    $email = $result['email'];
+    $endereco = $result['endereco'];
+    $observacao = $result['observacao'];
 } else {
     // ADICIONAR
     $titulo = 'Adicionar Pessoa';
