@@ -1,3 +1,7 @@
+<?php
+require_once './utils/utils.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
